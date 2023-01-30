@@ -111,3 +111,4 @@ if __name__ == '__main__':
     # 2 b)
     for i in range(11):
         print("Expected steps for s = {}: {}".format(i, calculate_expected_steps(i)))
+

@@ -20,10 +20,10 @@ class WagesUtilityMaximization:
         self.alpha = alpha
 
         self.actions = ['accept', 'deny']
-        self.employment_status = ['employed', 'unemployed']
+        self.employment_status = ['unemployed', 'employed']
         self.non_terminal_states: Iterable[NonTerminal[Tuple[str, float]]] = [NonTerminal((status, wage))
-                                                                               for status in self.employment_status for
-                                                                               wage in self.wages[1:]]
+                                                                              for status in self.employment_status for
+                                                                              wage in self.wages[1:]]
         # specify reward function
         self.reward_function_vector = {
             (NonTerminal(s.state), a): (
@@ -32,8 +32,7 @@ class WagesUtilityMaximization:
         }
 
         # calculate transition probabilities
-        self.tr_map: Mapping[
-            Tuple[NonTerminal[Tuple[str, float]], A], Categorical[NonTerminal[Tuple[str, float]]]] = {}
+        self.tr_map: Mapping[Tuple[NonTerminal[Tuple[str, float]], A], Categorical[NonTerminal[Tuple[str, float]]]] = {}
         for s in self.non_terminal_states:
             for a in self.actions:
                 if s.state[0] == 'unemployed' and a == 'deny':
@@ -42,7 +41,8 @@ class WagesUtilityMaximization:
                         range(len(self.wages[1:]))
                     })
                 else:  # if employed or accept offer
-                    dist = {NonTerminal(('unemployed', self.wages[i + 1])): self.alpha * self.offer_probabilities[i] for i in
+                    dist = {NonTerminal(('unemployed', self.wages[i + 1])): self.alpha * self.offer_probabilities[i] for
+                            i in
                             range(len(self.wages[1:]))}
                     dist[NonTerminal(('employed', s.state[1]))] = 1 - self.alpha
                     self.tr_map[(s, a)] = Categorical(dist)
@@ -94,14 +94,23 @@ class WagesUtilityMaximization:
 
 if __name__ == '__main__':
     # input values
-    wages = [150, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]  # wages w0 - w10
-    offer_probabilities = [0.2, 0.05, 0.1, 0.15, 0.02, 0.08, 0.16, 0.04, 0.07, 0.13]  # offer probs for each wage
-    discount_rate = 0.3
-    alpha = 0.0001
-    convergence_tolerance = 0.001
+    # wages = [150, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]  # wages w0 - w10
+    # offer_probabilities = [0.2, 0.05, 0.1, 0.15, 0.02, 0.08, 0.16, 0.04, 0.07, 0.13]  # offer probs for each wage
+    # discount_rate = 0.3
+    # alpha = 0.0001
+    convergence_tolerance = 0.0001
+
+    # List of 5 Job probabilities, sum to 1
+    prob = [0.1, 0.2, 0.3, 0.2, 0.2]
+    # List of 5 wages + unemployment wage
+    wages = [150, 100, 200, 300, 400, 500]
+    # Likelihood of losing job
+    alpha = 0.1
+    # Discount factor
+    gamma = 0.5
 
     # create instance of WagesUtilityMaximization
-    wum = WagesUtilityMaximization(wages, offer_probabilities, discount_rate, alpha)
+    wum = WagesUtilityMaximization(wages, prob, gamma, alpha)
     value_vector, policy = wum.value_iteration(convergence_tolerance)
     for state, value in value_vector.items():
         print(f'{state.state}: {value} -> {policy.policy_map[state]}')

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ea78c4-56f9-4960-a7c7-fdbd8cdb8a46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assignments/hw4_no2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignments/hw4_no3.py" afterDir="false" />
+    <list default="true" id="25ea78c4-56f9-4960-a7c7-fdbd8cdb8a46" name="Changes" comment="assignment 5">
+      <change afterPath="$PROJECT_DIR$/assignments/hw5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignments/hw5_no3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rl/markov_decision_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/rl/markov_decision_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,29 +51,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.hw4_no3">
-    <configuration name="hw3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RL-book" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/hw3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.hw5_no3">
     <configuration name="hw4_no2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL-book" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="optimal_exercise_bin_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hw5_no2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL-book" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,12 +104,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rl/chapter8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rl/chapter8/optimal_exercise_bin_tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/hw5_no2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +118,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stock_price_simulations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hw5_no3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RL-book" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assignments" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assignments/hw5_no3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="simple_inventory_mrp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RL-book" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,7 +153,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rl/chapter2/stock_price_simulations.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rl/chapter2/simple_inventory_mrp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hw5_no3" />
+        <item itemvalue="Python.hw5_no2" />
+        <item itemvalue="Python.simple_inventory_mrp" />
         <item itemvalue="Python.hw4_no3" />
         <item itemvalue="Python.hw4_no2" />
-        <item itemvalue="Python.optimal_exercise_bin_tree" />
-        <item itemvalue="Python.hw3" />
-        <item itemvalue="Python.stock_price_simulations" />
       </list>
     </recent_temporary>
   </component>
@@ -190,12 +191,26 @@
       <workItem from="1675563866488" duration="16111000" />
       <workItem from="1675725844595" duration="5848000" />
       <workItem from="1676060643135" duration="1446000" />
-      <workItem from="1676168288974" duration="23579000" />
+      <workItem from="1676168288974" duration="24160000" />
+      <workItem from="1676484747458" duration="194000" />
+      <workItem from="1676486146305" duration="22780000" />
     </task>
+    <task id="LOCAL-00001" summary="assignment 5">
+      <created>1676344974602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676344974602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="assignment 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -211,21 +226,6 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/assignments/hw4_no3.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/assignments/hw4_no3.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rl/markov_decision_process.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/rl/chapter8/optimal_exercise_bi.py</url>
           <line>73</line>
           <option name="timeStamp" value="45" />
@@ -236,12 +236,15 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RL_book$hw4_no2.coverage" NAME="hw4_no2 Coverage Results" MODIFIED="1676343687361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
     <SUITE FILE_PATH="coverage/RL_book$hw1.coverage" NAME="hw1 Coverage Results" MODIFIED="1674541301826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hws" />
-    <SUITE FILE_PATH="coverage/RL_book$hw4.coverage" NAME="hw4_no3 Coverage Results" MODIFIED="1676344612542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
+    <SUITE FILE_PATH="coverage/RL_book$hw4.coverage" NAME="hw4_no3 Coverage Results" MODIFIED="1676344879525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
     <SUITE FILE_PATH="coverage/RL_book$hw1__1_.coverage" NAME="hw1 (1) Coverage Results" MODIFIED="1674786631175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
     <SUITE FILE_PATH="coverage/RL_book$optimal_exercise_bin_tree.coverage" NAME="optimal_exercise_bin_tree Coverage Results" MODIFIED="1676177371974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rl/chapter8" />
     <SUITE FILE_PATH="coverage/RL_book$hw3.coverage" NAME="hw3 Coverage Results" MODIFIED="1675731620727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
+    <SUITE FILE_PATH="coverage/RL_book$hw5.coverage" NAME="hw5 Coverage Results" MODIFIED="1676603476038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
     <SUITE FILE_PATH="coverage/RL_book$hw2.coverage" NAME="hw2 Coverage Results" MODIFIED="1675147018653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
+    <SUITE FILE_PATH="coverage/RL_book$hw5_no3.coverage" NAME="hw5_no3 Coverage Results" MODIFIED="1676656036767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assignments" />
     <SUITE FILE_PATH="coverage/RL_book$stock_price_simulations.coverage" NAME="stock_price_simulations Coverage Results" MODIFIED="1674075060128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rl/chapter2" />
     <SUITE FILE_PATH="coverage/RL_book$setup.coverage" NAME="setup Coverage Results" MODIFIED="1674066357814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RL_book$simple_inventory_mrp.coverage" NAME="simple_inventory_mrp Coverage Results" MODIFIED="1676592525039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rl/chapter2" />
   </component>
 </project>

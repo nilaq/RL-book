@@ -86,7 +86,7 @@ class MarkovDecisionProcess(ABC, Generic[S, A]):
             policy: Policy[S, A]
     ) -> Iterable[TransitionStep[S, A]]:
         '''Simulate this MDP with the given policy, yielding the
-        sequence of (states, action, next state, reward) 4-tuples
+        sequence of (stat   es, action, next state, reward) 4-tuples
         encountered in the simulation trace.
 
         '''

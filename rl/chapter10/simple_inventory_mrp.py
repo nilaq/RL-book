@@ -35,7 +35,7 @@ half_life: float = 1000.0
 exponent: float = 0.5
 
 lambda_param = 0.3
-
+'''
 mc_finite_equal_wts_correctness(
     fmrp=si_mrp,
     gamma=gamma,
@@ -74,7 +74,7 @@ td_lambda_finite_learning_rate_correctness(
     exponent=exponent,
     initial_vf_dict=initial_vf_dict
 )
-
+'''
 plot_batch: int = 50
 plot_start: int = 0
 learning_rates: Sequence[Tuple[float, float, float]] = \

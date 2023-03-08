@@ -1,5 +1,4 @@
-from typing import Mapping, Tuple, Iterable, Iterator, Sequence, Callable, \
-    List
+from typing import Mapping, Tuple, Iterable, Iterator, Sequence, Callable, List
 from rl.markov_process import NonTerminal
 from rl.markov_decision_process import FiniteMarkovDecisionProcess, \
     TransitionStep

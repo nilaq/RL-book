@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     start_state_dist = si_mrp.get_stationary_distribution().map(lambda s: NonTerminal(s))
 
-    '''
+
     print("Monte Carlo")
     print("--------------")
     traces = itertools.islice(si_mrp.reward_traces(start_state_dist), 1000)
@@ -87,14 +87,13 @@ if __name__ == '__main__':
     print("TD")
     print("--------------")
     approx_0 = Tabular({s: 0. for s in si_mrp.non_terminal_states})
-    transitions = itertools.islice(si_mrp.simulate_reward(start_state_dist), 1000000)
+    transitions = itertools.islice(si_mrp.simulate_reward(start_state_dist), 10000)
     vf: Tabular[NonTerminal[InventoryState]] = last(td_prediction(transitions, approx_0, user_gamma))
     print(list(vf.values_map.values()))
     print()
-    '''
 
-    print("TD Lambda (lambda = 0.5) Book")
-    print("--------------")
+
+    # plot
 
     initial_learning_rate: float = 0.03
     half_life: float = 1000.0
@@ -119,11 +118,6 @@ if __name__ == '__main__':
             diff.append(rsme)
         lamda_convergences[l] = diff
 
-
-    print(list(vf.values_map.values()))
-    print()
-    #print(lamda_convergences)
-
     # Create a figure and axis object
     fig, ax = plt.subplots()
 
@@ -139,7 +133,7 @@ if __name__ == '__main__':
     # Show the plot
     plt.show()
 
-    '''
+
     print("TD Lambda (lambda = 0.5) Own")
     print("--------------")
     traces = itertools.islice(si_mrp.reward_traces(start_state_dist), 100)
@@ -159,7 +153,7 @@ if __name__ == '__main__':
         td_lambda_prediction_tabular(curtailed_traces, approx_0, user_gamma, 0.5))
     print(list(vf.values()))
     print()
-    '''
+
 
 
 
